@@ -111,54 +111,36 @@ def jump():
         y = y+3
         if y == int(map_size)-2:
             y = 1
-            return y
         if y == int(map_size)-1:
             y = 2
-            return y
         if y == int(map_size):
             y = 3
-            return y
         brush_position = brush_positions[0]
-        return brush_position
-        return position
-        return x
-        return y
+  
 
     if direction == directions[1]:
         position = matriks[x+3][y]
         x = x+3
         if x == int(map_size) - 2:
             x = 1
-            return x
         if x == int(map_size) - 1:
             x = 2
-            return x
         if x == int(map_size):
             x = 3
-            return x
-        return position
         brush_position = brush_positions[0]
-        return brush_position
-        return x
-        return y
+     
 
     if direction == directions[2]:
         position = matriks [x][y-3]
-        return position
         y = y-3
         if y == 3:
             y = int(map_size)
-            return y
         if y == 2:
             y = int(map_size)-1
-            return y
         if y == 1:
             y = int(map_size)-2
-            return y
         brush_position = brush_positions[0]
-        return brush_position
-        return x
-        return y
+      
 
     if direction == directions[3]:
         position = matriks[x-3][y]
@@ -166,17 +148,11 @@ def jump():
         x = x-3
         if x == 3:
             x = int(map_size)
-            return x
         if x == 2:
             x = int(map_size) - 1
-            return x
         if x == 1:
             x = int(map_size) - 2
-            return x
         brush_position = brush_positions[0]
-        return brush_position
-        return x
-        return y
 
 ### REVERSE FONKSİYONU 7
 def reverse():
